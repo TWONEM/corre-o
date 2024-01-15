@@ -1,0 +1,14 @@
+﻿@model CoroaListViewModel 
+
+<div>
+    <h2>@Model.CategoriaAtual</h2>
+</div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var coroa in Model.Coroas)
+        {
+            <partial name="_CoroasResumo" for="@coroa" />
+        }     
+    </div>
+</div>

@@ -1,0 +1,13 @@
+﻿@model HomeViewModel
+
+<partial name="_Carousel" />
+<h2>pasta home</h2>
+<h4>aula 70 edição de layout</h4>
+
+<div class="row">
+    @foreach(var coroa in Model.CoroasPreferidos)
+    {
+        <partial name="_CoroasResumo"for="@coroa"/>
+    }
+
+</div>
